@@ -1,0 +1,14 @@
+<?php 
+require __DIR__.'/vendor/autoload.php';
+$addressWeb = 'http://localhost:3030';
+define ('HOME', $addressWeb);
+define ('COMPANY', $addressWeb.'/company');
+define ('FACILITIES', $addressWeb.'/facilities');
+define ('OCCUPATIONAREA', $addressWeb.'/occupationarea');
+define ('CLIENT', $addressWeb.'/client');
+define ('SAFETY', $addressWeb.'/safety');
+define ('CONTACTUSPARTNER', $addressWeb.'/contactUsPartner');
+define ('CONTACTUSCLIENT', $addressWeb.'/contactUsClient');
+
+
+define('VIEWS_PATH', __DIR__.'/views/');

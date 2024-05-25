@@ -1,0 +1,12 @@
+<?php 
+namespace Code\Controller;
+
+use Code\View\View;
+class ContactUsPartnerController
+{
+    public function index(){
+        $view = new View('site/contactUsPartner.phtml');
+        
+        return $view->render();
+    }
+}

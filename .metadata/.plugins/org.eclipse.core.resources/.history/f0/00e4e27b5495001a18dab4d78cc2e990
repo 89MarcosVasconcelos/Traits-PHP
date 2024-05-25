@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport"
+	content="width=device-width height=device-height initial-scale=1.0">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/scrollIt.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/main.js"></script>
+
+<link rel="stylesheet" href="css/themify-icons.css">
+<link rel="stylesheet" href="css/slicknav.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CMuli:100,300,400,600,800">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style2.css">
+<style>
+.ie-panel {
+	display: none;
+	background: #212121;
+	padding: 10px 0;
+	box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+	clear: both;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+	display: block;
+}
+</style>
+<style>
+.carousel-control-prev-icon {
+	background-image:
+		url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233375ec' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+	background-image:
+		url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233375ec' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators li {
+	position: relative;
+	flex: 0 1 auto;
+	width: 30px;
+	height: 3px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #233375ec;
+	opacity: .5;
+	transition: opacity 0.6s ease;
+}
+
+/*body {
+	background-color: #E6F2FF;
+}*/
+
+
+.bg-custom-1 {
+  background-color: #85144b;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #3375ec 0%, #80d0c7 100%);
+}
+
+.bradcam_bg_1 {
+    background-image: url(../img/banner/bradcam.png);
+    max-height:720px;
+    position: relative;
+}
+
+.bradcam_area {
+    background-size: cover;
+    background-position: bottom;
+    padding: 90px ;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    
+    z-index: 0;
+}
+
+.container {
+	/*background-color: #FFFFFF*/;
+}
+
+.footer-classic {
+	border-top: 1px solid #ebebeb;
+	background-color: #ffffff;
+}
+
+.bk-color {
+	/*background-color: #333;*/
+	background-color: #3375ec;
+}
+.tl-black{
+background-color: #000;
+}
+header .header-content {
+	margin: 0 -54px;
+	padding: 0 15px;
+	background-color: rgba(255, 255, 255, .93);
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .4);
+	-webkit-border-bottom-right-radius: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-moz-border-radius-bottomleft: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+</style>
+<?php 
+
+session_start();
+if(!isset($_POST['language']) ){
+    $_SESSION['language'] = 0;
+}else{
+    $_SESSION['language'] = $_POST['language'];
+}
+
+?>
+</head>
+<body>
+
+	<div class="ie-panel">
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+			src="images/ie8-panel/warning_bar_0000_us.jpg" height="42"
+			width="820"
+			alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+	</div>
+	<div class="preloader" id="loading">
+		<div class="preloader-body">
+			<div id="loading-center-object">
+				<div class="object" id="object_four"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_one"></div>
+			</div>
+		</div>
+	</div>
+	<div class="page">
+		<header>
+        <div class="header-area  bg-custom-2 ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="images/LOGO.fw.png" width="175" height="31">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="<?=HOME;?>">home</a></li>
+                                        <li><a href="#">A Empresa <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                 <li><a href="<?=COMPANY;?>">Quem Somos</a></li>
+                                                 <li><a href="<?=OCCUPATIONAREA;?>">Áreas de Atuação</a></li>
+                                                 <li><a href="<?=FACILITIES;?>">Facilities</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li><a href=""></a></li>
+                                        <li><a href="<?=CLIENT;?>">Clientes</a></li>
+                                        <li><a href="<?=SAFETY;?>">Segurança</a></li>
+                                        <li><a href="#">Fale Conosco <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="<?=CONTACTUSCLIENT;?>">Seja Cliente</a></li>
+                                                <li><a href="<?=CONTACTUSPARTNER;?>">Seja um Parceiro</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                    <div class="rd-navbar-element">
+                                    <table><tr><td>
+                                    <form action="<?php echo 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];?>" method="post">
+							<input type="hidden" value="0" name="language">
+							<input  type="image"  src="images/iconfinder_br_53127.png" alt=""
+								width="25" height="25">	
+															
+							</form>
+							</td><td>
+							<form action="<?php echo 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];?>" method="post">
+							<input type="hidden" value="1" name="language">
+							<input type="image" src="images/iconfinder_is_53199.png" alt=""
+								width="25" height="25">								
+							</form>
+							</td></tr></table>
+						</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </header>

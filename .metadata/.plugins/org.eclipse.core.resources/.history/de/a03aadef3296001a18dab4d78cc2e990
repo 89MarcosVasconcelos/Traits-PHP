@@ -1,0 +1,12 @@
+<?php 
+namespace Code\Controller;
+
+use Code\View\View;
+class ClientController
+{
+    public function index(){
+        $view = new View('site/client.phtml');
+        $view->name = "Marcos Vasconcelos";
+        return $view->render();
+    }
+}

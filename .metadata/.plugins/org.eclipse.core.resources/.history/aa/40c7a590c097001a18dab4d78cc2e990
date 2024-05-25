@@ -1,0 +1,51 @@
+<?php 
+namespace Code\Controller;
+
+
+use Code\DB\Connection;
+use Code\View\View;
+use Code\Entity\Client;
+use Code\DB\Entity;
+
+
+class ClientController
+{
+    
+   
+    
+    public function index()
+    {
+        $pdo = Connection::getInstance();
+        
+        $view = new View('site/client.phtml');
+        
+        $view->client = (new Client($pdo))->findAll();
+        
+        return $view->render();
+    }
+    
+     
+   /* public function SearchTranslate($position, $column)
+    {
+       /* $pdo = Connection::getInstance();
+        $view = new View('site/client.phtml');
+        
+        $view->client = (new Client($pdo))->translate($position, $column);
+        return $view->render();*/
+        
+       // $sql =  'SELECT :column FROM translate WHERE position = :position;';
+        $sql = "ok";
+        //$get = $this->conn->prepare($sql);
+        //$get->bindValue(':column', $column, PDO::PARAM_STR);// use bindValue to bind the variable's value
+        //$get->bindValue(':position', $position, PDO::PARAM_STR);
+        // $get->execute();
+        return $sql;//$get->fetch(PDO::FETCH_ASSOC);
+        
+        
+    }*/
+    
+    
+    
+     
+}
+

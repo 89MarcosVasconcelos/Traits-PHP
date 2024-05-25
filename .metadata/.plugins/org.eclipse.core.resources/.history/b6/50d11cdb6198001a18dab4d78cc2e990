@@ -1,0 +1,3 @@
+<?php require VIEWS_PATH.'includes/header.phtml';?>
+
+<?php require VIEWS_PATH.'includes/footer.phtml';?>

@@ -1,0 +1,10 @@
+<?php
+require VIEWS_PATH. 'includes/header.phtml';?>
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div class='container'>
+  <div class="panel panel-primary">
+      <div class="panel-heading">Panel with panel-primary class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+    </div>
+<?php require VIEWS_PATH.'includes/footer.phtml';?>

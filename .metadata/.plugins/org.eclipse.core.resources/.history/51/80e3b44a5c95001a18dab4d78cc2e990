@@ -1,0 +1,107 @@
+
+
+<footer class="section footer-classic bk-color">
+	<div class="footer-classic-main">
+		<div class="container bk-color">
+			<div class="row row-50 justify-content-lg-between">
+				<div class="col-sm-7 col-lg-3 col-xl-2">
+
+					<table>
+						<tr>
+							<th colspan="2"><center>
+									<p>
+										<span style="max-width: 250px;"><a class="brand"
+											href="index.html"><img src="images/logo.fw.png" alt=""
+												width="175" height="31" /></a></span>
+									</p>
+								</center></th>
+
+						</tr>
+						<tr>
+							<td style="text-align: right;"><form
+									action="<?php echo 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];?>"
+									method="post">
+									<input type="hidden" value="0" name="language"> <input
+										type="image" src="images/iconfinder_br_53127.png" alt=""
+										width="25" height="25">
+
+								</form></td>
+							<td><form
+									action="<?php echo 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];?>"
+									method="post">
+									<input type="hidden" value="1" name="language"> <input
+										type="image" src="images/iconfinder_is_53199.png" alt=""
+										width="25" height="25">
+								</form></td>
+
+						</tr>
+
+					</table>
+
+
+
+
+
+
+				</div>
+				<div class="col-sm-5 col-lg-3 col-xl-2">
+					<h4 class="footer-classic-title text-white"><?php if($_SESSION['language'] == '0'){echo "A Empresa";}else{echo "The Company";}?></h4>
+					<ul class="list footer-classic-list">
+						<li><a href="<?=HOME; ?>" class="text-white"><?php if($_SESSION['language'] == '0'){echo "Quem Somos";}else{echo "About Us";}?></a></li>
+						<li><a href="<?=OCCUPATIONAREA;?>" class="text-white"><?php if($_SESSION['language'] == '0'){echo "Áreas de Atuação";}else{echo "Become a Client";}?></a></li>
+						<li><a href="<?=FACILITIES;?>" class="text-white">Facilities</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-7 col-lg-5 col-xl-3">
+					<h4 class="footer-classic-title text-white"><?php if($_SESSION['language'] == '0'){echo "Links Rápidos";}else{echo "Quick  Links";}?></h4>
+					<ul class="list footer-classic-list footer-classic-list_2-cols">
+						<li><a href="<?=CLIENT;?>" class="text-white"><?php if($_SESSION['language'] == '0'){echo "Clientes";}else{echo "Clients";}?></a></li>
+						<li><a href="<?=SAFETY;?>" class="text-white"><?php if($_SESSION['language'] == '0'){echo "Segurança";}else{echo "Safety";}?></a></li>
+						<li><a href="<?=CONTACTUSCLIENT;?>" class="text-white"><?php if($_SESSION['language'] == '0'){echo "Seja Parceiro";}else{echo "Became a Client";}?></a></li>
+						<li><a href="<?=CONTACTUSPARTNER;?>" class="text-white"><?php if($_SESSION['language'] == '0'){echo "Seja Cliente";}else{echo "Became a Partner";}?></a></li>
+
+					</ul>
+				</div>
+				<div class="col-sm-5 col-lg-9 col-xl-2">
+					<h4 class="footer-classic-title text-white"><?php if($_SESSION['language'] == '0'){echo "Outros Contatos";}else{echo "Others Contacts";}?></h4>
+					<div class="row row-20 row-sm-35">
+						<div class="col-6 col-sm-12 col-lg-8 col-xl-12">
+							<div class="row row-10 text-default">
+								<div class="col-lg-6 col-xl-12">
+									<a href="mailto:#">info@demolink.org</a>
+								</div>
+								<div class="col-lg-6 col-xl-12">
+									<a class="big" href="tel:#">+1-853-234-65</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-6 col-sm-12 col-lg-4 col-xl-12 text-right text-sm-left">
+							<div class="group group-xs">
+								<a class="link link-social-1 mdi mdi-twitter" href="#"></a><a
+									class="link link-social-1 mdi mdi-facebook" href="#"></a><a
+									class="link link-social-1 mdi mdi-instagram" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-classic-aside tl-black">
+		<div class="container tl-black">
+			<center>
+				<p class="rights">
+					<span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Marcos
+						Vasconcelos</span>.
+				</p>
+			</center>
+		</div>
+	</div>
+</footer>
+</div>
+<div class="snackbars" id="form-output-global"></div>
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

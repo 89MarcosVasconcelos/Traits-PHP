@@ -1,0 +1,115 @@
+<?php require VIEWS_PATH.'includes/header.phtml';?>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+	<div class="card text-center">
+		<div class="card-header">
+    <?php
+
+if ($_SESSION['language'] == '0') {
+        echo "Entre em contato e seja um dos nossos muitos clientes satisfeitos!";
+    } else {
+        echo "Get in touch and be one of our many satisfied customers!";
+    }
+    ?>
+  </div>
+
+	</div>
+	<br />
+	<form>
+		<div class="col-6">
+			<label class="sr-only" for="inlineFormInputGroup">Username</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+					<div class="input-group-text">Nome da Empresa</div>
+				</div>
+				<input type="text" class="form-control" id="inlineFormInputGroup"
+					placeholder="Nome da Empresa">
+			</div>
+		</div>
+
+
+		<div class="col-6">
+			<label class="sr-only" for="inlineFormInputGroup">Username</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+					<div class="input-group-text">Nome do Contato</div>
+				</div>
+				<input type="text" class="form-control" id="inlineFormInputGroup"
+					placeholder="Username">
+			</div>
+		</div>
+
+		<div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">Telefone</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+					<div class="input-group-text">Telefone</div>
+				</div>
+				<input type="text" class="form-control" id="inlineFormInputGroup"
+					placeholder="Username">
+			</div>
+		</div>
+		
+		<div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">CNPJ</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+					<div class="input-group-text">CNPJ</div>
+				</div>
+				<input type="text" class="form-control" id="inlineFormInputGroup"
+					placeholder="Username">
+			</div>
+		</div>
+		
+		
+		<div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">Estado</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+					<div class="input-group-text">Estado</div>
+				</div>
+				<select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+			</div>
+		</div>
+		
+		<div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">Município</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+					<div class="input-group-text">Município</div>
+				</div>
+				<input type="text" class="form-control" id="inlineFormInputGroup"
+					placeholder="Username">
+			</div>
+		</div>
+		
+		<div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">E-mail</label>
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+					<div class="input-group-text">E-mail</div>
+				</div>
+				<input type="email" class="form-control" id="inlineFormInputGroup"
+					placeholder="Username">
+			</div>
+		</div>
+
+
+	</form>
+
+</div>
+
+
+
+<?php require VIEWS_PATH.'includes/footer.phtml';?>

@@ -1,0 +1,16 @@
+<?php
+require VIEWS_PATH. 'includes/header.phtml';
+
+?>
+<br /><br /><br />
+<div class="container">
+
+<div class="jumbotron">
+<h3>
+Página não encontrada
+</h3>
+</div>
+</div>
+<p>Favor navegar no menu acima!</p>
+</a></div>
+<?php require VIEWS_PATH.'includes/footer.phtml';?>

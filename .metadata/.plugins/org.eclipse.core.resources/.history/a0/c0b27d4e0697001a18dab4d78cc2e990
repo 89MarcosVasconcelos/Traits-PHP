@@ -1,0 +1,37 @@
+<?php 
+namespace Code\Controller;
+
+
+use Code\DB\Connection;
+use Code\View\View;
+use Code\Entity\Client;
+use Code\DB\Entity;
+
+class ClientController
+{
+    public function index()
+    {
+        $pdo = Connection::getInstance();
+        
+        $view = new View('site/client.phtml');
+        
+        $view->client = (new Client($pdo))->findAll();
+        
+        return $view->render();
+    }
+    
+    function teste() {
+        return $view->render();
+        
+    }
+    
+    
+     function translate($flag, $text, $text2){
+        if($flag == 0){
+            $textPg = $text;
+        }else{
+            $textPg = $text2;
+        }
+        return $textPg;
+    }
+}

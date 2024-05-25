@@ -1,0 +1,8 @@
+<?php 
+require __DIR__.'/vendor/autoload.php';
+define ('HOME', 'http://localhost:3030');
+define ('COMPANY', 'http://localhost:3030/company');
+define ('FACILITIES', 'http://localhost:3030/facilities');
+define ('OCCUPATIONAREA', 'http://localhost:3030/occupationarea');
+
+define('VIEWS_PATH', __DIR__.'/views/');

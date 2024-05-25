@@ -1,0 +1,21 @@
+<?php require VIEWS_PATH.'includes/header.phtml';?>
+<div class="container">
+<form>
+<div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+      </div>
+    </div>
+
+
+</form>
+
+</div>
+
+
+
+<?php require VIEWS_PATH.'includes/footer.phtml';?>

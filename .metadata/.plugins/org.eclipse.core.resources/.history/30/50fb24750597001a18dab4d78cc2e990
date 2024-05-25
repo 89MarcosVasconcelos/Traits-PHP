@@ -1,0 +1,59 @@
+<?php use Code\Controller\ContactUsClientController;
+use Code\Entity\Client;
+
+<?php require VIEWS_PATH.'includes/header.phtml';?>
+<style>
+.cover {
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+}
+
+</style>
+
+
+<br /><br /><br /><br /><br /><br />
+<div id="theGrid">
+	<div class="container">
+	
+	<div class="card text-center">
+  <div class="card-header">
+    Veja um pouco mais sobre os mais de 70 clientes e 200 trabalhos:
+  </div>
+ 
+</div>
+<br />
+<div class="container">
+<?php 
+$traducao = new Client();
+print_r($traducao->teste());
+
+$acao = new Acao();
+$resultado = $acao->fnAcao($db);
+
+?>
+
+
+		<div class="row" id="recipegrid">
+<?php foreach($this->client as $client):?>
+      <div class="col-2 box" >
+      
+				<div class="imgHolder">
+				
+					<img src="images/loader.gif" data-echo="images/logos/<?=$client['name'];?>.jpg" width="50" height="50" class="img-thumbnail img-responsive cover">
+					 <div class="in-box w-100">
+						<div class="super-box h-100 w-100 text-center d-flex justify-content-center align-items-center">
+							<div class="box-text">
+								<a href='http://google.com' style="text-decoration:none;"><p class="font-weight-bold"><?php if($_SESSION['language'] == '0'){echo "Veja Mais";}else{echo "See more";}?></p></a>
+							</div>
+						</div>
+					</div> 
+				</div>
+				
+			</div>	
+      
+      
+      
+        <?php endforeach;?>
+</div></div>
+<?php require VIEWS_PATH.'includes/footer.phtml';?>

@@ -1,0 +1,21 @@
+<?php 
+namespace Code\Controller;
+
+use Code\View\View;
+class ClientController
+{
+    public function index(){
+        $view = new View('site/client.phtml');
+        $view->name = "Marcos Vasconcelos";
+        return $view->render();
+    }
+    
+    public function translate($flag, $text, $text2){
+        if($flag == 0){
+            $textPg = $text;
+        }else{
+            $textPg = $text2;
+        }
+        return $textPg
+    }
+}
